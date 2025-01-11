@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+   ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #12a0ff;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+#image {
+            display: none;
+        }
+    </style>
+<title>Tanvir</title>
+</head>
+<body>
+
+    <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="post.html">post</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+      <div>
+        
+        <h3>Click on the button to see image</h3>
+        <img id="image" src=
+"https://www.aiub.edu/Files/Templates/NewAIUB/assets/images/aiub-logo.svg"
+            alt="GFG image" />
+    </div>
+    <button type="button" onclick="show()" id="btnID">
+        Show Image
+    </button>
+</body>
+<script>
+    function show() {
+        document.getElementById('image')
+            .style.display = "block";
+        document.getElementById('btnID')
+            .style.display = "none";
+    }
+</script>
+</html>
